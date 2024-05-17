@@ -1,11 +1,15 @@
 {
-    "name": "bee-delivery/omie",
+    "name": "omie-tecnoponto",
     "description": "Integração rápida e fácil com a Omie, em PHP/Laravel",
     "authors": [
         {
             "name": "John Kennedy",
             "email": "johnkmedeiros@gmail.com"
-        }
+        },
+        {
+            "name": "Eduardo M. Cooper",
+            "email": "oeduardocooper@gmail.com"
+        }        
     ],
     "type": "library",
     "license": "GPL-3.0-only",
@@ -16,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BeeDelivery\\Omie\\": "src/"
+            "Tecnoponto\\Omie\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BeeDelivery\\Omie\\OmieServiceProvider"
+                "Tecnoponto\\Omie\\OmieServiceProvider"
             ]
         }
     }

@@ -6,8 +6,12 @@ Pacote de integração com [https://omie.com.br/](https://omie.com.br/)
 
 Instale com [composer](https://getcomposer.org/):
 
+## Forkado do projeto bee-delivery
+
+[github] (https://github.com/bee-delivery/omie)
+
 ```bash
-composer require bee-delivery/omie
+composer require EduardoCooperTecnoponto/omie-tecnoponto
 ```
 
 ## Como utilizar?
