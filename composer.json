@@ -1,5 +1,5 @@
 {
-    "name": "omie-tecnoponto",
+    "name": "tecnoponto/omie",
     "description": "Integração rápida e fácil com a Omie, em PHP/Laravel",
     "authors": [
         {
