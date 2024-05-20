@@ -11,7 +11,7 @@ Instale com [composer](https://getcomposer.org/):
 [github] (https://github.com/bee-delivery/omie)
 
 ```bash
-composer require EduardoCooperTecnoponto/omie-tecnoponto
+composer require tecnoponto/omie-tecnoponto
 ```
 
 ## Como utilizar?
