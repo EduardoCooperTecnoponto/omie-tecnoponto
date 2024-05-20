@@ -1,6 +1,6 @@
 <?php
 
-namespace BeeDelivery\Omie;
+namespace Tecnoponto\Omie;
 
 use GuzzleHttp\Client;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace BeeDelivery\Omie;
+namespace Tecnoponto\Omie;
 
-use BeeDelivery\Omie\Categoria;
-use BeeDelivery\Omie\Cliente;
-use BeeDelivery\Omie\Conta;
-use BeeDelivery\Omie\Departamento;
-use BeeDelivery\Omie\Extrato;
-use BeeDelivery\Omie\Movimento;
-use BeeDelivery\Omie\OrdemServico;
-use BeeDelivery\Omie\Pagavel;
-use BeeDelivery\Omie\Recebivel;
+use Tecnoponto\Omie\Categoria;
+use Tecnoponto\Omie\Cliente;
+use Tecnoponto\Omie\Conta;
+use Tecnoponto\Omie\Departamento;
+use Tecnoponto\Omie\Extrato;
+use Tecnoponto\Omie\Movimento;
+use Tecnoponto\Omie\OrdemServico;
+use Tecnoponto\Omie\Pagavel;
+use Tecnoponto\Omie\Recebivel;
 
 class Omie
 {

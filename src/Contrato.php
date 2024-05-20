@@ -1,10 +1,10 @@
 <?php
 
 
-namespace BeeDelivery\Omie;
+namespace Tecnoponto\Omie;
 
 
-use BeeDelivery\Omie\Connection;
+use Tecnoponto\Omie\Connection;
 
 class Contrato
 {

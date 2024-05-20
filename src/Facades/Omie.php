@@ -1,6 +1,6 @@
 <?php
 
-namespace BeeDelivery\Omie\Facades;
+namespace Tecnoponto\Omie\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
