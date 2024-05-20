@@ -14,7 +14,7 @@
     "type": "library",
     "license": "GPL-3.0-only",
     "minimum-stability": "dev",
-    "prefer-stable": false,
+    "prefer-stable": true,
     "require": {
         "php": ">=7.1.3"
     },
