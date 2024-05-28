@@ -21,7 +21,7 @@ class Produto
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#ListarProdutos
      * @param Array $produto
-     * @return json
+     * @return array
      */
     public function listar($produto)
     {
@@ -38,7 +38,7 @@ class Produto
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#ConsultarProduto
      * @param Array $produto
-     * @return json
+     * @return array
      */
     public function consultar($produto)
     {
@@ -47,6 +47,23 @@ class Produto
             $produto,
             'ConsultarProduto'
         );
-    }    
+    }
+    
+    
+    /**
+     * Associar codigo interno a produto
+     *
+     * @see https://app.omie.com.br/api/v1/geral/produtos/#AssociarCodIntProduto
+     * @param Array $produto
+     * @return array
+     */
+    public function associarCodigoInterno($produto)
+    {
+        return $this->http->post(
+            '/geral/produtos/',
+            $produto,
+            'AssociarCodIntProduto'
+        );
+    }     
   
 }
