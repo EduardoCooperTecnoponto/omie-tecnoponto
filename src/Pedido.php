@@ -21,7 +21,7 @@ class Pedido
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#IncluirPedido
      * @param Array $pedido
-     * @return json
+     * @return array
      */
     public function incluir($pedido)
     {
@@ -38,7 +38,7 @@ class Pedido
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#StatusPedido
      * @param Array $pedido
-     * @return json
+     * @return array
      */
     public function status($pedido)
     {
@@ -55,7 +55,7 @@ class Pedido
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#TrocarEtapaPedido
      * @param Array $pedido
-     * @return json
+     * @return array
      */
     public function trocarEtapa($pedido)
     {
@@ -72,7 +72,7 @@ class Pedido
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#ConsultarPedido
      * @param Array $pedido
-     * @return json
+     * @return array
      */
     public function consultar($codigo_pedido)
     {
@@ -82,4 +82,36 @@ class Pedido
             'ConsultarPedido'
         );
     }     
+
+    /**
+     * fatura um pedido na omie
+     *
+     * @see https://app.omie.com.br/api/v1/produtos/pedidovendafat/#FaturarPedidoVenda
+     * @param Array $pedido
+     * @return array
+     */
+    public function faturar($pedido)
+    {
+        return $this->http->post(
+            '/produtos/pedidovendafat/',
+            $pedido,
+            'FaturarPedidoVenda'
+        );
+    }     
+    
+    /**
+     * obtem pedidos de venda a serem faturados
+     *
+     * @see https://app.omie.com.br/api/v1/produtos/pedidovendafat/#ObterPedidosVenda
+     * @param Array $pedido
+     * @return array
+     */
+    public function listarPorEtapa($etapa)
+    {
+        return $this->http->post(
+            '/produtos/pedidovendafat/',
+            $etapa,
+            'ObterPedidosVenda'
+        );
+    }      
 }
