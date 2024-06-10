@@ -65,5 +65,38 @@ class Produto
             'AssociarCodIntProduto'
         );
     }     
-  
+
+
+    /**
+     * Incluir produto
+     *
+     * @see https://app.omie.com.br/api/v1/geral/produtos/#IncluirProduto
+     * @param Array $produto
+     * @return array
+     */
+    public function incluir($produto)
+    {
+        return $this->http->post(
+            '/geral/produtos/',
+            $produto,
+            'IncluirProduto'
+        );
+    }     
+
+    /**
+     * Alterar produto
+     *
+     * @see https://app.omie.com.br/api/v1/geral/produtos/#AlterarProduto
+     * @param Array $produto
+     * @return array
+     */
+    public function alterar($produto)
+    {
+        return $this->http->post(
+            '/geral/produtos/',
+            $produto,
+            'AlterarProduto'
+        );
+    }      
+
 }
