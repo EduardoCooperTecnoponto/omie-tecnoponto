@@ -21,7 +21,7 @@ class Cliente
      * @param Integer $nRegPorPagina Número de registro por página
      * @param Integer $nPagina Número da página
      * @param Array $arrayFiltros Array de filtros
-     * @return json
+     * @return array
      */
     public function listar($nRegPorPagina = 200, $nPagina = 1, $arrayFiltros = [])
     {
@@ -44,15 +44,13 @@ class Cliente
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ConsultarCliente
      * @param String $idOmie
      * @param String $idInterno
-     * @return json
+     * @return array
      */
     public function consultar($idOmie = '', $idInterno = '')
     {
         return $this->http->post('/geral/clientes/', [
-
             'codigo_cliente_omie'       => $idOmie,
             'codigo_cliente_integracao' => $idInterno,
-
         ], 'ConsultarCliente');
     }
 
@@ -62,15 +60,13 @@ class Cliente
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ExcluirCliente
      * @param String $idOmie
      * @param String $idInterno
-     * @return json
+     * @return array
      */
     public function excluir($idOmie = '', $idInterno = '')
     {
         return $this->http->post('/geral/clientes/', [
-
             'codigo_cliente_omie'       => $idOmie,
             'codigo_cliente_integracao' => $idInterno,
-
         ], 'ExcluirCliente');
     }
 
@@ -80,16 +76,14 @@ class Cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#AlterarCliente
      * @param Array $cliente
-     * @return json
+     * @return array
      */
     public function alterar($cliente)
     {
         return $this->http->post(
-
             '/geral/clientes/',
             $cliente,
             'AlterarCliente'
-
         );
     }
 
@@ -98,16 +92,14 @@ class Cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#UpsertCliente
      * @param Array $cliente
-     * @return json
+     * @return array
      */
     public function upsert($cliente)
     {
         return $this->http->post(
-
             '/geral/clientes/',
             $cliente,
             'UpsertCliente'
-
         );
     }
 
@@ -117,19 +109,16 @@ class Cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#IncluirCliente
      * @param Array $cliente
-     * @return json
+     * @return array
      */
     public function incluir($cliente)
     {
         return $this->http->post(
-
             '/geral/clientes/',
             $cliente,
             'IncluirCliente'
-
         );
     }
-
     
 
     /**
@@ -147,4 +136,20 @@ class Cliente
             'ListarClientes'
         );
     }
+
+
+    /**
+     * Associar código de integração com cliente
+     *
+     * @see https://app.omie.com.br/api/v1/geral/clientes/#AssociarCodIntCliente
+     * @param Array $cliente
+     * @return array
+     */
+    public function associarCodigoInterno($cliente){
+        return $this->http->post(
+            '/geral/clientes/',
+            $cliente,
+            'AssociarCodIntCliente'
+        );
+    }    
 }

@@ -31,4 +31,52 @@ class Servico
         );
     }
 
+    /**
+     * consultar serviço
+     *
+     * @see https://app.omie.com.br/api/v1/servicos/servico/#ConsultarCadastroServico
+     * @param Array $servico
+     * @return array
+     */
+    public function consultar($servico)
+    {
+        return $this->http->post(
+            '/servicos/servico/',
+            $servico,
+            'ConsultarCadastroServico'
+        );
+    }
+
+    /**
+     * incluir serviço
+     *
+     * @see https://app.omie.com.br/api/v1/servicos/servico/#IncluirCadastroServico
+     * @param Array $servico
+     * @return array
+     */
+    public function incluir($servico)
+    {
+        return $this->http->post(
+            '/servicos/servico/',
+            $servico,
+            'IncluirCadastroServico'
+        );
+    }    
+
+    /**
+     * alterar serviço
+     *
+     * @see https://app.omie.com.br/api/v1/servicos/servico/#AlterarCadastroServico
+     * @param Array $servico
+     * @return array
+     */
+    public function alterar($servico)
+    {
+        return $this->http->post(
+            '/servicos/servico/',
+            $servico,
+            'AlterarCadastroServico'
+        );
+    }   
+
 }
