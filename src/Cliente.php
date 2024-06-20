@@ -18,21 +18,14 @@ class Cliente
      * Recupera todos os clientes
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ListarClientes
-     * @param Integer $nRegPorPagina Número de registro por página
-     * @param Integer $nPagina Número da página
-     * @param Array $arrayFiltros Array de filtros
+     * @param Array $cliente Array de filtros
      * @return array
      */
-    public function listar($nRegPorPagina = 200, $nPagina = 1, $arrayFiltros = [])
+    public function listar($cliente)
     {
-        $requestBody = array_merge([
-            'pagina'                => $nPagina,
-            'registros_por_pagina'  => $nRegPorPagina,
-        ], $arrayFiltros);
-
         return $this->http->post(
             '/geral/clientes/',
-            $requestBody,
+            $cliente,
             'ListarClientes'
         );
     }

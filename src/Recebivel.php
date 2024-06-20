@@ -22,7 +22,7 @@ class Recebivel
      * @param Integer $nRegPorPagina Número de registro por página
      * @param Integer $nPagina Número da página
      * @param Array $arrayFiltros Array de filtros
-     * @return json
+     * @return array
      */
     public function listar($nRegPorPagina = 200, $nPagina = 1, $arrayFiltros = [])
     {
@@ -45,7 +45,7 @@ class Recebivel
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ConsultarContaReceber
      * @param String $idOmie
      * @param String $idInterno
-     * @return json
+     * @return array
      */
     public function consultar($idOmie = '', $idInterno = '')
     {
@@ -64,7 +64,7 @@ class Recebivel
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#AlterarContaReceber
      * @param Array $recebivel
-     * @return json
+     * @return array
      */
     public function alterar($recebivel)
     {
@@ -82,7 +82,7 @@ class Recebivel
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ConciliarRecebimento
      * @param String $idBaixa
      * @param String $idBaixaInterno
-     * @return json
+     * @return array
      */
     public function conciliar($idBaixa = '', $idBaixaInterno = '')
     {
@@ -104,7 +104,7 @@ class Recebivel
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#DesconciliarRecebimento
      * @param String $idBaixa
      * @param String $idBaixaInterno
-     * @return json
+     * @return array
      */
     public function desconciliar($idBaixa = '', $idBaixaInterno = '')
     {
@@ -126,7 +126,7 @@ class Recebivel
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ExcluirContaReceber
      * @param String $idOmie
      * @param String $idInterno
-     * @return json
+     * @return array
      */
     public function excluir($idOmie = '', $idInterno = '')
     {
@@ -143,7 +143,7 @@ class Recebivel
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#LancarRecebimento
      * @param Array $recebimento
-     * @return json
+     * @return array
      */
     public function lancarRecebimento($recebimento)
     {
@@ -160,7 +160,7 @@ class Recebivel
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#CancelarRecebimento
      * @param String $idOmie
      * @param String $idInterno
-     * @return json
+     * @return array
      */
     public function cancelarRecebimento($idOmie = '', $idInterno = '')
     {
@@ -177,7 +177,7 @@ class Recebivel
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#IncluirContaReceber
      * @param Array $recebivel
-     * @return json
+     * @return array
      */
     public function incluir($recebivel)
     {
