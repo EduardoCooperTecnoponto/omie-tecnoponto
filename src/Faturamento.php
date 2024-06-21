@@ -19,7 +19,7 @@ class Faturamento
      * gerar boleto
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceberboleto/#GerarBoleto
-     * @param $vendedor
+     * @param $pedido
      * @return array
      */
     public function gerarBoleto($pedido)
@@ -31,6 +31,42 @@ class Faturamento
             'GerarBoleto'
         );
     }
+
+
+    /**
+     * obterboleto de conta a receber
+     *
+     * @see https://app.omie.com.br/api/v1/financas/contareceberboleto/#ObterBoleto
+     * @param $conta_receber
+     * @return array
+     */
+    public function obterBoletoContaReceber($conta_receber)
+    {
+        return $this->http->post(
+
+            '/financas/contareceberboleto/',
+            $conta_receber,
+            'ObterBoleto'
+        );
+    }
+
+
+    /**
+     * gerar boleto de conta a receber
+     *
+     * @see https://app.omie.com.br/api/v1/financas/contareceberboleto/#GerarBoleto
+     * @param $conta_receber
+     * @return array
+     */
+    public function gerarBoletoContaReceber($conta_receber)
+    {
+        return $this->http->post(
+
+            '/financas/contareceberboleto/',
+            $conta_receber,
+            'ObterBoleto'
+        );
+    }    
 
 
 }

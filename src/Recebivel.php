@@ -19,21 +19,14 @@ class Recebivel
      * Lista as contas a receber cadastradas.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ListarContasReceber
-     * @param Integer $nRegPorPagina Número de registro por página
-     * @param Integer $nPagina Número da página
-     * @param Array $arrayFiltros Array de filtros
+     * @param Array $recebivel Array de filtros
      * @return array
      */
-    public function listar($nRegPorPagina = 200, $nPagina = 1, $arrayFiltros = [])
+    public function listar($recebivel)
     {
-        $requestBody = array_merge([
-            'pagina'                => $nPagina,
-            'registros_por_pagina'  => $nRegPorPagina,
-        ], $arrayFiltros);
-
         return $this->http->post(
             '/financas/contareceber/',
-            $requestBody,
+            $recebivel,
             'ListarContasReceber'
         );
     }
