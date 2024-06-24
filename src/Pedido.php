@@ -113,5 +113,22 @@ class Pedido
             $etapa,
             'ObterPedidosVenda'
         );
-    }      
+    }
+
+
+    /**
+     * exclui um pedido de venda
+     *
+     * @see https://app.omie.com.br/api/v1/produtos/pedido/#ExcluirPedido
+     * @param Array $pedido
+     * @return array
+     */
+    public function excluir($pedido)
+    {
+        return $this->http->post(
+            '/produtos/pedido/',
+            $pedido,
+            'ExcluirPedido'
+        );
+    }        
 }

@@ -69,4 +69,21 @@ class Faturamento
     }    
 
 
+    /**
+     * cancelar um boleto de conta a receber
+     *
+     * @see https://app.omie.com.br/api/v1/financas/contareceberboleto/#CancelarBoleto
+     * @param $conta_receber
+     * @return array
+     */
+    public function cancelarBoletoContaReceber($conta_receber)
+    {
+        return $this->http->post(
+
+            '/financas/contareceberboleto/',
+            $conta_receber,
+            'CancelarBoleto'
+        );
+    }       
+
 }

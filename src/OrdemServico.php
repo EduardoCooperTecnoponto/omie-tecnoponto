@@ -82,4 +82,40 @@ class OrdemServico
             'StatusOS'
         );
     }
+
+
+    /**
+     * Exclusão de OS
+     *
+     * @see https://app.omie.com.br/api/v1/servicos/os/#ExcluirOS
+     * @param $ordemServico
+     * @return array
+     */
+    public function excluir($ordemServico)
+    {
+        return $this->http->post(
+
+            '/servicos/os/',
+            $ordemServico,
+            'ExcluirOS'
+        );
+    }
+
+
+    /**
+     * Cancelar de OS
+     *
+     * @see https://app.omie.com.br/api/v1/servicos/osp/#CancelarOS
+     * @param $ordemServico
+     * @return array
+     */
+    public function cancelar($ordemServico)
+    {
+        return $this->http->post(
+
+            '/servicos/osp/',
+            $ordemServico,
+            'CancelarOS'
+        );
+    }    
 }
