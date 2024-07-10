@@ -19,7 +19,7 @@ class Servico
      * Listar serviços
      *
      * @see https://app.omie.com.br/api/v1/servicos/servico/#ListarCadastroServico
-     * @param Array $servico
+     * @param $servico
      * @return array
      */
     public function listar($servico)
@@ -35,7 +35,7 @@ class Servico
      * consultar serviço
      *
      * @see https://app.omie.com.br/api/v1/servicos/servico/#ConsultarCadastroServico
-     * @param Array $servico
+     * @param $servico
      * @return array
      */
     public function consultar($servico)
@@ -51,7 +51,7 @@ class Servico
      * incluir serviço
      *
      * @see https://app.omie.com.br/api/v1/servicos/servico/#IncluirCadastroServico
-     * @param Array $servico
+     * @param $servico
      * @return array
      */
     public function incluir($servico)
@@ -67,7 +67,7 @@ class Servico
      * alterar serviço
      *
      * @see https://app.omie.com.br/api/v1/servicos/servico/#AlterarCadastroServico
-     * @param Array $servico
+     * @param $servico
      * @return array
      */
     public function alterar($servico)

@@ -18,7 +18,7 @@ class Cliente
      * Recupera todos os clientes
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ListarClientes
-     * @param Array $cliente Array de filtros
+     * @param $cliente Array de filtros
      * @return array
      */
     public function listar($cliente)
@@ -35,8 +35,8 @@ class Cliente
      * Consulta os dados de um cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ConsultarCliente
-     * @param String $idOmie
-     * @param String $idInterno
+     * @param $idOmie
+     * @param $idInterno
      * @return array
      */
     public function consultar($idOmie = '', $idInterno = '')
@@ -51,8 +51,8 @@ class Cliente
      * Exclui um cliente da base de dados.
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#ExcluirCliente
-     * @param String $idOmie
-     * @param String $idInterno
+     * @param $idOmie
+     * @param $idInterno
      * @return array
      */
     public function excluir($idOmie = '', $idInterno = '')
@@ -68,7 +68,7 @@ class Cliente
      * Altera os dados do cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#AlterarCliente
-     * @param Array $cliente
+     * @param $cliente
      * @return array
      */
     public function alterar($cliente)
@@ -84,7 +84,7 @@ class Cliente
      * Altera se existir ou inclui um cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#UpsertCliente
-     * @param Array $cliente
+     * @param $cliente
      * @return array
      */
     public function upsert($cliente)
@@ -101,7 +101,7 @@ class Cliente
      * Inclui o cliente no Omie
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#IncluirCliente
-     * @param Array $cliente
+     * @param $cliente
      * @return array
      */
     public function incluir($cliente)
@@ -135,7 +135,7 @@ class Cliente
      * Associar código de integração com cliente
      *
      * @see https://app.omie.com.br/api/v1/geral/clientes/#AssociarCodIntCliente
-     * @param Array $cliente
+     * @param $cliente
      * @return array
      */
     public function associarCodigoInterno($cliente){

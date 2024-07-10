@@ -20,7 +20,7 @@ class Contrato
      * Inclui o contrato no Omie
      *
      * @see https://app.omie.com.br/api/v1/servicos/contrato/#IncluirContrato
-     * @param Array $contrato
+     * @param $contrato
      * @return array
      */
     public function incluir($contrato)
@@ -39,7 +39,7 @@ class Contrato
      * excluir item de contrato no Omie
      *
      * @see https://app.omie.com.br/api/v1/servicos/contrato/#ExcluirItem
-     * @param Array $contrato
+     * @param $contrato
      * @return array
      */
     public function excluirItem($contrato)
@@ -58,7 +58,7 @@ class Contrato
      *  Cancela contrato faturado
      *
      * @see https://app.omie.com.br/api/v1/servicos/contratofat/#CancelarContrato
-     * @param Array $contrato
+     * @param $contrato
      * @return array
      */
     public function cancelarContrato($contrato)
@@ -77,7 +77,7 @@ class Contrato
      *  Suspende um contrato 
      *
      * @see https://app.omie.com.br/api/v1/servicos/contratofat/#SuspenderContrato
-     * @param Array $contrato
+     * @param $contrato
      * @return array
      */
     public function suspenderContrato($contrato)

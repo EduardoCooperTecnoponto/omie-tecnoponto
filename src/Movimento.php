@@ -19,10 +19,10 @@ class Movimento
      * Lista os movimentos financeiros cadastrados.
      *
      * @see https://app.omie.com.br/api/v1/financas/mf/#ListarMovimentos
-     * @param Integer $nRegPorPagina Número de registro por página
-     * @param Integer $nPagina Número da página
-     * @param Array $arrayFiltros Array de filtros
-     * @return json
+     * @param $nRegPorPagina Número de registro por página
+     * @param $nPagina Número da página
+     * @param $arrayFiltros Array de filtros
+     * @return array
      */
     public function listar($nRegPorPagina = 500, $nPagina = 1, $arrayFiltros = [])
     {

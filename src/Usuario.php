@@ -19,7 +19,7 @@ class Usuario
      * obter vendedor
      *
      * @see https://app.omie.com.br/api/v1/crm/usuarios/#ListarUsuarios
-     * @param $vendedor
+     * @param $usuario
      * @return array
      */
     public function listar($usuario)

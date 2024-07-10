@@ -17,11 +17,11 @@ class Extrato
      * Lista os extratos da conta corrente.
      *
      * @see https://app.omie.com.br/api/v1/financas/extrato/#ListarExtrato
-     * @param Integer $nCodCC
-     * @param String $dPeriodoInicial
-     * @param String $dPeriodoFinal
-     * @param Integer|Null $cCodIntCC
-     * @return Json
+     * @param $nCodCC
+     * @param $dPeriodoInicial
+     * @param $dPeriodoFinal
+     * @param $cCodIntCC
+     * @return array
      */
     public function listar($nCodCC, $dPeriodoInicial, $dPeriodoFinal, $cCodIntCC = '')
     {

@@ -19,7 +19,7 @@ class Recebivel
      * Lista as contas a receber cadastradas.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ListarContasReceber
-     * @param Array $recebivel Array de filtros
+     * @param $recebivel Array de filtros
      * @return array
      */
     public function listar($recebivel)
@@ -36,8 +36,8 @@ class Recebivel
      * Consulta uma Conta a Receber.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ConsultarContaReceber
-     * @param String $idOmie
-     * @param String $idInterno
+     * @param $idOmie
+     * @param $idInterno
      * @return array
      */
     public function consultar($idOmie = '', $idInterno = '')
@@ -56,7 +56,7 @@ class Recebivel
      * Altera uma conta a receber.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#AlterarContaReceber
-     * @param Array $recebivel
+     * @param $recebivel
      * @return array
      */
     public function alterar($recebivel)
@@ -73,8 +73,8 @@ class Recebivel
      * Concilia um recebimento.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ConciliarRecebimento
-     * @param String $idBaixa
-     * @param String $idBaixaInterno
+     * @param $idBaixa
+     * @param $idBaixaInterno
      * @return array
      */
     public function conciliar($idBaixa = '', $idBaixaInterno = '')
@@ -95,8 +95,8 @@ class Recebivel
      * Desconcilia um recebimento.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#DesconciliarRecebimento
-     * @param String $idBaixa
-     * @param String $idBaixaInterno
+     * @param $idBaixa
+     * @param $idBaixaInterno
      * @return array
      */
     public function desconciliar($idBaixa = '', $idBaixaInterno = '')
@@ -117,8 +117,8 @@ class Recebivel
      * Exclui uma conta a receber.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#ExcluirContaReceber
-     * @param String $idOmie
-     * @param String $idInterno
+     * @param $idOmie
+     * @param $idInterno
      * @return array
      */
     public function excluir($idOmie = '', $idInterno = '')
@@ -135,7 +135,7 @@ class Recebivel
      * Lança um recebimento.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#LancarRecebimento
-     * @param Array $recebimento
+     * @param $recebimento
      * @return array
      */
     public function lancarRecebimento($recebimento)
@@ -151,8 +151,8 @@ class Recebivel
      * Efetua o cancelamento de um recebimento de Contas a Receber.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#CancelarRecebimento
-     * @param String $idOmie
-     * @param String $idInterno
+     * @param $idOmie
+     * @param $idInterno
      * @return array
      */
     public function cancelarRecebimento($idOmie = '', $idInterno = '')
@@ -169,7 +169,7 @@ class Recebivel
      * Inclui uma conta a Receber.
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#IncluirContaReceber
-     * @param Array $recebivel
+     * @param $recebivel
      * @return array
      */
     public function incluir($recebivel)

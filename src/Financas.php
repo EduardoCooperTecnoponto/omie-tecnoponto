@@ -20,7 +20,7 @@ class Financas
      * pesquisa por titulos
      *
      * @see https://app.omie.com.br/api/v1/financas/pesquisartitulos/#PesquisarLancamentos
-     * @param Array $titulo
+     * @param $titulo
      * @return array
      */    
     public function pesquisarTitulos($titulo)
@@ -38,7 +38,7 @@ class Financas
      * pesquisa por titulos
      *
      * @see https://app.omie.com.br/api/v1/financas/pesquisartitulos/#ObterURLBoleto
-     * @param Array $titulo
+     * @param $titulo
      * @return array
      */    
     public function obterUrlBoleto($titulo)
@@ -56,7 +56,7 @@ class Financas
      * cancelar conta a receber
      *
      * @see https://app.omie.com.br/api/v1/financas/contareceber/#CancelarContaReceber
-     * @param Array $conta_receber
+     * @param $conta_receber
      * @return array
      */    
     public function cancelarContaReceber($conta_receber)

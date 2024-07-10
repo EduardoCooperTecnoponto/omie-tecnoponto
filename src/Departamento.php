@@ -18,9 +18,9 @@ class Departamento
      * Lista os departamentos cadastrados.
      *
      * @see https://app.omie.com.br/api/v1/geral/departamentos/#ListarDepartamentos
-     * @param Integer $pagina, $registros_por_pagina
-     * @param String $apenas_importado, S/N
-     * @return json
+     * @param $pagina, $registros_por_pagina
+     * @param $apenas_importado, S/N
+     * @return array
      */
     public function listar($pagina = 1, $registros_por_pagina = 50, $apenas_importado_api = 'N')
     {

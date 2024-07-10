@@ -20,7 +20,7 @@ class Pedido
      * Inclui o pedido na Omie
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#IncluirPedido
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function incluir($pedido)
@@ -37,7 +37,7 @@ class Pedido
      * Obtem o status do pedido na Omie
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#StatusPedido
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function status($pedido)
@@ -54,7 +54,7 @@ class Pedido
      * Troca a etapa do pedido na Omie
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#TrocarEtapaPedido
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function trocarEtapa($pedido)
@@ -71,7 +71,7 @@ class Pedido
      * Consulta o pedido na omie
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#ConsultarPedido
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function consultar($codigo_pedido)
@@ -87,7 +87,7 @@ class Pedido
      * fatura um pedido na omie
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedidovendafat/#FaturarPedidoVenda
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function faturar($pedido)
@@ -103,7 +103,7 @@ class Pedido
      * obtem pedidos de venda a serem faturados
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedidovendafat/#ObterPedidosVenda
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function listarPorEtapa($etapa)
@@ -120,7 +120,7 @@ class Pedido
      * exclui um pedido de venda
      *
      * @see https://app.omie.com.br/api/v1/produtos/pedido/#ExcluirPedido
-     * @param Array $pedido
+     * @param $pedido
      * @return array
      */
     public function excluir($pedido)

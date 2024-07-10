@@ -20,7 +20,7 @@ class Produto
      * Listar produtos
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#ListarProdutos
-     * @param Array $produto
+     * @param $produto
      * @return array
      */
     public function listar($produto)
@@ -37,7 +37,7 @@ class Produto
      * Consultar produtos
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#ConsultarProduto
-     * @param Array $produto
+     * @param $produto
      * @return array
      */
     public function consultar($produto)
@@ -54,7 +54,7 @@ class Produto
      * Associar codigo interno a produto
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#AssociarCodIntProduto
-     * @param Array $produto
+     * @param $produto
      * @return array
      */
     public function associarCodigoInterno($produto)
@@ -71,7 +71,7 @@ class Produto
      * Incluir produto
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#IncluirProduto
-     * @param Array $produto
+     * @param $produto
      * @return array
      */
     public function incluir($produto)
@@ -87,7 +87,7 @@ class Produto
      * Alterar produto
      *
      * @see https://app.omie.com.br/api/v1/geral/produtos/#AlterarProduto
-     * @param Array $produto
+     * @param $produto
      * @return array
      */
     public function alterar($produto)
