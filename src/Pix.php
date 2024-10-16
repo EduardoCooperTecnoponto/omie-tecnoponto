@@ -23,11 +23,17 @@ class Pix
      * @param $pix
      * @return array
      */
-    public function listar($pix)
+    public function listar($pagina = 1, $qtdRegistros = 50, $dataEmissaoDe = '', $dataEmissaoAte = '', $status = '')
     {
         return $this->http->post(
             '/financas/pix/',
-            $pix,
+            [
+                "nPagina" => $pagina,
+                "nRegPorPagina" => $qtdRegistros,
+                "dEmissaoDe" => $dataEmissaoDe,
+                "dEmissaoAte" => $dataEmissaoAte,
+                "cStatus" => $status
+            ],
             'ListarPix'
         );
     }
