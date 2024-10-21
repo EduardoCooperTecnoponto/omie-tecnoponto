@@ -62,13 +62,14 @@ class Pix
     }    
 
     /**
-     * Gerar Pix
-     *
+     * Gerar Pixz
+     * se a conta corrente não for informada, o pix será recebido no omie cash
+     * de acordo com a omie, o webhook ainda não está funcionando e não tem documentação
      * @see https://app.omie.com.br/api/v1/financas/pix/#GerarPix
      * @param $pix
      * @return array
      */
-    public function gerarPix($codigoIntegracao, $codigoTitulo, $valor, $contaCorrente, $webhookUrl)
+    public function gerarPix($codigoIntegracao, $codigoTitulo, $valor, $contaCorrente = null, $webhookUrl = null)
     {
         return $this->http->post(
             '/financas/pix/',
